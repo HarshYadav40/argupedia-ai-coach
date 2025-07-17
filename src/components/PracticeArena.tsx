@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { Mic, MicOff, RefreshCw, Play, Stop, Save } from 'lucide-react';
+import { Mic, MicOff, RefreshCw, Play, Square, Save } from 'lucide-react';
 import LoadingSpinner from './LoadingSpinner';
 
 interface FeedbackData {
@@ -285,7 +284,7 @@ Provide constructive, specific feedback that helps improve debating skills.`
                 } ${!recognition ? 'opacity-50 cursor-not-allowed' : ''}`}
               >
                 {isRecording ? (
-                  <Stop className="h-8 w-8 text-white" />
+                  <Square className="h-8 w-8 text-white" />
                 ) : (
                   <Play className="h-8 w-8 text-white" />
                 )}
